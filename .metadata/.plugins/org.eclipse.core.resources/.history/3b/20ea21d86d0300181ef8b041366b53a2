@@ -1,0 +1,69 @@
+import java.awt.EventQueue;
+import java.awt.Image;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JTextField;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class pollingstart {
+
+	private JFrame frame;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					pollingstart window = new pollingstart();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public pollingstart() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 383);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JButton btnNext = new JButton("Next");
+		btnNext.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				frame.dispose();
+				page2 page2obj=new page2();
+				page2obj.setVisible(true);
+			}
+		});
+		btnNext.setFont(new Font("Berlin Sans FB Demi", Font.ITALIC, 15));
+		btnNext.setForeground(Color.GREEN);
+		btnNext.setBackground(Color.WHITE);
+		btnNext.setBounds(165, 306, 89, 23);
+		frame.getContentPane().add(btnNext);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\dshub\\Desktop\\Project MD0002\\Pollingboth\\require\\voteindia.jpeg"));
+		lblNewLabel.setBounds(0, 0, 433, 344);
+		frame.getContentPane().add(lblNewLabel);
+	}
+}
