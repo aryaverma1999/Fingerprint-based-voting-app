@@ -8,7 +8,10 @@ I as the leader of team with my two collage mate, Introduce a new concept of usi
 NOTE:= Due to lack of funding this project is just an prototype showing that this could be very efficient and effictive. 
 
 
-ADVANTAGE:-
-There could be no bugging of system as one vote can be casted per person.
-There would be reduce in buying of votes as people would cast vote from the office or home.
+ADVANTAGE:- 
+
+There could be no bugging of system as one vote can be casted per person. 
+
+There would be reduce in buying of votes as people would cast vote from the office or home. 
+
 It is easy to set up and long lasting solution.
